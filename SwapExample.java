@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class SwapExample {
 
     // Method to swap two elements in an array
@@ -8,6 +6,5 @@ public class SwapExample {
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
 
 }
