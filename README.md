@@ -23,12 +23,30 @@ It serves as my **personal notes/diary**.
 
 ---
 
-## 🗓 Daily Log
+## 🗓 Notes
 
-> **Format:** `YYYY-MM-DD` — _[Number of Questions Done]_ — [List of Question Names]
+### 🔹 Sliding Window & Two Pointers
 
-### Logs:
+- A powerful technique for substring/subarray problems.
+- Maintains a window with two pointers (`low`, `high`) to track a valid range.
+- Window can **expand** (`high++`) or **shrink** (`low++`) depending on the condition.
 
-- **2025-08-13** — 0 — _(No progress today yet)_
+### 🔹 Frequency Map vs. Index Map
+
+- **Frequency Map:**
+
+  - Stores the count of characters in the current window.
+  - When a duplicate appears, shrink the window step by step until valid.
+
+- **Index Map:**
+  - Stores the last index of each character.
+  - Allows directly jumping the `low` pointer past the duplicate’s previous index.
+  - More efficient for longest substring problems.
+
+### 🔹 Prefix Sum
+
+- Commonly used for subarray problems.
+- Helps in quickly calculating sums of ranges.
+- Often combined with hash maps
 
 ---
