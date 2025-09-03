@@ -8,12 +8,13 @@
  *  We keep track of the maximum number of fruits collected in any valid subarray and return that value at the end.
  */
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class FruitsIntoBasketBrute {
      public int totalFruits(int[] fruits) {
 
-        int maxFruits = 0;;
+        int maxFruits = 0;
 
         for(int i = 0; i < fruits.length; i++){
 
