@@ -49,4 +49,22 @@ It serves as my **personal notes/diary**.
 - Helps in quickly calculating sums of ranges.
 - Often combined with hash maps
 
----
+### 🔹 Binary Tree
+
+#### 📂 Types of Binary Trees
+
+- **Full Binary Tree** → Every node has either 0 or 2 children.
+- **Complete Binary Tree** → All levels are completely filled except possibly the last, which is filled from left to right.
+- **Perfect Binary Tree** → All internal nodes have 2 children, and all leaves are at the same level.
+- **Balanced Binary Tree** → Height difference between left and right subtrees of any node is at most 1.
+- **Degenerate (Skewed) Tree** → Each parent node has only one child (like a linked list).
+
+#### 🌳 DFS Traversals (Depth-First)
+
+- **Inorder Traversal** → Left → Root → Right
+- **Preorder Traversal** → Root → Left → Right
+- **Postorder Traversal** → Left → Right → Root
+
+#### 🌐 BFS Traversal (Breadth-First)
+
+- **Level Order Traversal** → Visit nodes level by level, from left to right
