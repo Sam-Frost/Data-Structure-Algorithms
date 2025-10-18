@@ -18,8 +18,8 @@ It serves as my **personal notes/diary**.
 
 ## 📊 Progress Tracker
 
-- **Completed:** `86 / 455`
-- **Completion Percentage:** `19%`
+- **Completed:** `137 / 455`
+- **Completion Percentage:** `30%`
 
 ---
 
