@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,25 +12,25 @@ public class LongestSubArray {
         int maxLength = 0;
         int sum = 0;
 
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
 
             sum += arr[i];
 
-
-            if(sum == k) {
-                maxLength =   Math.max(maxLength, i+1);
+            if (sum == k) {
+                maxLength = Math.max(maxLength, i + 1);
             }
 
             int remain = sum - k;
 
             Integer val = preSumMap.get(remain);
 
-            if(val != null) {
-                maxLength =   Math.max(maxLength,i - val);
+            if (val != null) {
+                maxLength = Math.max(maxLength, i - val);
             }
 
-            if(preSumMap.get(sum) == null)
+            if (preSumMap.get(sum) == null) {
                 preSumMap.put(sum, i);
+            }
 
         }
 
@@ -47,17 +46,18 @@ public class LongestSubArray {
         int low = 0;
         int high = 0;
 
-        while(high < arr.length) {
-            while(sum > k) {
+        while (high < arr.length) {
+            while (sum > k) {
                 sum -= arr[low];
                 low--;
             }
 
             high++;
-            if(high < arr.length)
-                sum =+ arr[high];
+            if (high < arr.length) {
+                sum = +arr[high];
+            }
 
-            if(sum == k){
+            if (sum == k) {
                 maxLength = Math.max(maxLength, high - low + 1);
             }
 
