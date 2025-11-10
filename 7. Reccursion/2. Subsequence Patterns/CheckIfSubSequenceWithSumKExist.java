@@ -1,4 +1,7 @@
-
+/*
+ * Time Complexity: O(2^n) where n is the number of elements in the array
+ * Space Complexity: O(n) for recursive stack space
+ */
 public class CheckIfSubSequenceWithSumKExist {
 
     public boolean checkSubsequenceSum(int[] nums, int k) {
