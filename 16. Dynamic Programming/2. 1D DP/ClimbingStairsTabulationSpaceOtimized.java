@@ -17,7 +17,7 @@ public class ClimbingStairsTabulationSpaceOtimized {
         for (int i = 2; i <= n; i++) {
             int temp = one;
             one = one + two;
-            two = temp;;
+            two = temp;
         }
 
         return one;
