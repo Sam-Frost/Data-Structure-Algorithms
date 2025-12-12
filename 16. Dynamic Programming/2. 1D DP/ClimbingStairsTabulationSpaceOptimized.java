@@ -3,7 +3,7 @@
  * Space Complexity : O(1)
  * 
  */
-public class ClimbingStairsTabulationSpaceOtimized {
+public class ClimbingStairsTabulationSpaceOptimized {
 
     public int climbStairs(int n) {
 

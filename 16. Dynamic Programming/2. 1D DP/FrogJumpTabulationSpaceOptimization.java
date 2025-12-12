@@ -3,7 +3,7 @@
  * Space Complexity : O(1)
  * 
  */
-public class FrogJumpTabulationSpaceOtimization {
+public class FrogJumpTabulationSpaceOptimization {
 
     public int frogJump(int[] heights) {
 
