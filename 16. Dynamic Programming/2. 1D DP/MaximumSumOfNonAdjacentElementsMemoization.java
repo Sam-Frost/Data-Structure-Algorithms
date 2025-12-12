@@ -5,7 +5,7 @@
  */
 import java.util.Arrays;
 
-public class MaximumSumOfNonAdjacentElements {
+public class MaximumSumOfNonAdjacentElementsMemoization {
 
     public int nonAdjacent(int[] nums) {
         int[] dp = new int[nums.length];
