@@ -45,13 +45,9 @@ public class FloodFill {
         if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length) {
             return false;
         }
-
         // Not the start color
-        if (grid[i][j] != startColor) {
-            return false;
-        }
 
-        return true;
+        return grid[i][j] == startColor;
     }
 
     private class Pair {
