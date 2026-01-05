@@ -1,10 +1,8 @@
-package Array.Medium;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-
 
     public int[] twoSumBrute(int[] nums, int target) {
 
@@ -19,24 +17,24 @@ public class TwoSum {
 
         return new int[]{-1, -1};
 
-
     }
+
     public int[] twoSumBetter(int[] nums, int target) {
 
         Map<Integer, Integer> hashMap = new HashMap<>();
 
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
 
             int value = target - nums[i];
 
-            if(hashMap.get(value) != null)
-                return new int[] {i, hashMap.get(value)};
+            if (hashMap.get(value) != null) {
+                return new int[]{i, hashMap.get(value)};
+            }
 
             hashMap.put(nums[i], i);
         }
 
-        return new int[] {-1, -1};
-
+        return new int[]{-1, -1};
 
     }
 }
